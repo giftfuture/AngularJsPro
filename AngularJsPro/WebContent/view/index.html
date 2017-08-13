@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery.min.js"></script>
+<script src="AngularJS/angular.min.js"></script>
+<script src="js/ClassroomController.js"></script>
+<script src="js/app.js"></script>
+<script src="js/HomeController.js"></script>
+<script src="js/AllActivitiesController.js"></script>
+</head>
+<body ng-app="app">
+    <a ui-sref="home">School Buddy</a>
+    <a ui-sref="schools">Schools</a>
+    <a ui-sref="classrooms">Classrooms</a>
+    <a ui-sref="activities">Activities</a>
+    <div ui-view></div>
+</body>
+</html>

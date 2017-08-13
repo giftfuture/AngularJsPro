@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery.min.js"></script>
+<script src="AngularJS/angular.min.js"></script>
+<script src="js/ClassroomController.js"></script>
+<script src="js/app.js"></script>
+<script src="js/HomeController.js"></script>
+<script src="js/AllActivitiesController.js"></script>
+</head>
+<body>
+{{home.message}}
+{{home.schoolCount}}
+{{home.classroomCount}}
+{{home.activityCount}}
+
+<button ng-click="home.refresh()">刷新</button>
+</body>
+</html>

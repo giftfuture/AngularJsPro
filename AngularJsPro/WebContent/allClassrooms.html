@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery.min.js"></script>
+<script src="AngularJS/angular.min.js"></script>
+<script src="js/ClassroomController.js"></script>
+<script src="js/app.js"></script>
+<script src="js/HomeController.js"></script>
+<script src="js/AllActivitiesController.js"></script>
+</head>
+<body>
+<tr ng-repeat="classroom in classrooms.allClassrooms">
+    <td><a href="#/classrooms/{{classroom.id}}/details">{{classroom.name}}</a></td>
+    <td>{{classroom.school.name}}</td>
+    <td><a ui-sref="classroom_summary({id: classroom.id})">{{classroom.teacher}}</a></td>
+</tr>
+</body>
+</html>
